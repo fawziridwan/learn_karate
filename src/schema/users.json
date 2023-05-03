@@ -1,0 +1,543 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "error",
+    "status",
+    "message",
+    "data"
+  ],
+  "properties": {
+    "error": {
+      "type": "boolean",
+      "default": false,
+      "title": "The error Schema",
+      "examples": [
+        false
+      ]
+    },
+    "status": {
+      "type": "integer",
+      "default": 0,
+      "title": "The status Schema",
+      "examples": [
+        200
+      ]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "OK - The request was successful"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "default": {},
+      "title": "The data Schema",
+      "required": [
+        "message",
+        "authorization",
+        "userToken",
+        "profile",
+        "organization"
+      ],
+      "properties": {
+        "message": {
+          "type": "string",
+          "default": "",
+          "title": "The message Schema",
+          "examples": [
+            "Login berhasil"
+          ]
+        },
+        "authorization": {
+          "type": "string",
+          "default": "",
+          "title": "The authorization Schema",
+          "examples": [
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ"
+          ]
+        },
+        "userToken": {
+          "type": "string",
+          "default": "",
+          "title": "The userToken Schema",
+          "examples": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ"
+          ]
+        },
+        "profile": {
+          "type": "object",
+          "default": {},
+          "title": "The profile Schema",
+          "required": [
+            "user_id",
+            "role_id",
+            "role",
+            "nik",
+            "full_name",
+            "email",
+            "address",
+            "phone",
+            "job_title_id",
+            "job_title",
+            "join_date",
+            "date_of_birth",
+            "avatar",
+            "manager_id",
+            "manager_name",
+            "language",
+            "bank_name",
+            "bank_account_number",
+            "bank_account_name"
+          ],
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "default": 0,
+              "title": "The user_id Schema",
+              "examples": [
+                4
+              ]
+            },
+            "role_id": {
+              "type": "integer",
+              "default": 0,
+              "title": "The role_id Schema",
+              "examples": [
+                2
+              ]
+            },
+            "role": {
+              "type": "string",
+              "default": "",
+              "title": "The role Schema",
+              "examples": [
+                "HR Admin"
+              ]
+            },
+            "nik": {
+              "type": "string",
+              "default": "",
+              "title": "The nik Schema",
+              "examples": [
+                "123213"
+              ]
+            },
+            "full_name": {
+              "type": "string",
+              "default": "",
+              "title": "The full_name Schema",
+              "examples": [
+                "PAGII HR"
+              ]
+            },
+            "email": {
+              "type": "string",
+              "default": "",
+              "title": "The email Schema",
+              "examples": [
+                "hr@smooets.com"
+              ]
+            },
+            "address": {
+              "type": "string",
+              "default": "",
+              "title": "The address Schema",
+              "examples": [
+                "jl.holis"
+              ]
+            },
+            "phone": {
+              "type": "string",
+              "default": "",
+              "title": "The phone Schema",
+              "examples": [
+                "0812345678575"
+              ]
+            },
+            "job_title_id": {
+              "type": "integer",
+              "default": 0,
+              "title": "The job_title_id Schema",
+              "examples": [
+                2
+              ]
+            },
+            "job_title": {
+              "type": "string",
+              "default": "",
+              "title": "The job_title Schema",
+              "examples": [
+                "Developers"
+              ]
+            },
+            "join_date": {
+              "type": "string",
+              "default": "",
+              "title": "The join_date Schema",
+              "examples": [
+                "2023-01-24"
+              ]
+            },
+            "date_of_birth": {
+              "type": "string",
+              "default": "",
+              "title": "The date_of_birth Schema",
+              "examples": [
+                "2022-11-11"
+              ]
+            },
+            "avatar": {
+              "type": "string",
+              "default": "",
+              "title": "The avatar Schema",
+              "examples": [
+                "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/users/images/WjLGJBZ5HdOfke4OLyri1p98P2poqXeQc46H2T0IkCKpaVp3YV.png"
+              ]
+            },
+            "manager_id": {
+              "type": "string",
+              "default": "",
+              "title": "The manager_id Schema",
+              "examples": [
+                "1233321"
+              ]
+            },
+            "manager_name": {
+              "type": "null",
+              "default": null,
+              "title": "The manager_name Schema",
+              "examples": [
+                null
+              ]
+            },
+            "language": {
+              "type": "string",
+              "default": "",
+              "title": "The language Schema",
+              "examples": [
+                "id"
+              ]
+            },
+            "bank_name": {
+              "type": "null",
+              "default": null,
+              "title": "The bank_name Schema",
+              "examples": [
+                null
+              ]
+            },
+            "bank_account_number": {
+              "type": "null",
+              "default": null,
+              "title": "The bank_account_number Schema",
+              "examples": [
+                null
+              ]
+            },
+            "bank_account_name": {
+              "type": "null",
+              "default": null,
+              "title": "The bank_account_name Schema",
+              "examples": [
+                null
+              ]
+            }
+          },
+          "examples": [{
+            "user_id": 4,
+            "role_id": 2,
+            "role": "HR Admin",
+            "nik": "123213",
+            "full_name": "PAGII HR",
+            "email": "hr@smooets.com",
+            "address": "jl.holis",
+            "phone": "0812345678575",
+            "job_title_id": 2,
+            "job_title": "Developers",
+            "join_date": "2023-01-24",
+            "date_of_birth": "2022-11-11",
+            "avatar": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/users/images/WjLGJBZ5HdOfke4OLyri1p98P2poqXeQc46H2T0IkCKpaVp3YV.png",
+            "manager_id": "1233321",
+            "manager_name": null,
+            "language": "id",
+            "bank_name": null,
+            "bank_account_number": null,
+            "bank_account_name": null
+          }]
+        },
+        "organization": {
+          "type": "object",
+          "default": {},
+          "title": "The organization Schema",
+          "required": [
+            "id",
+            "name",
+            "logo",
+            "address",
+            "description",
+            "country_code",
+            "organization_type_id",
+            "organization_type",
+            "longitude",
+            "latitude",
+            "radius",
+            "location",
+            "pic_name",
+            "pic_number",
+            "pic_email",
+            "is_child"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "default": 0,
+              "title": "The id Schema",
+              "examples": [
+                2
+              ]
+            },
+            "name": {
+              "type": "string",
+              "default": "",
+              "title": "The name Schema",
+              "examples": [
+                "SMOOETS"
+              ]
+            },
+            "logo": {
+              "type": "string",
+              "default": "",
+              "title": "The logo Schema",
+              "examples": [
+                "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/organizations/logos/mae1XO7FpqyHnLtVnFvk4xZw9lc9gY81z2cYGvz1fLBqaVj0Zo.jpg"
+              ]
+            },
+            "address": {
+              "type": "string",
+              "default": "",
+              "title": "The address Schema",
+              "examples": [
+                "Jl. Holis Regency No.37A, Babakan, Babakan Ciparay, Bandung City, West Java 40222"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "default": "",
+              "title": "The description Schema",
+              "examples": [
+                "Description of Organization"
+              ]
+            },
+            "country_code": {
+              "type": "string",
+              "default": "",
+              "title": "The country_code Schema",
+              "examples": [
+                "ind"
+              ]
+            },
+            "organization_type_id": {
+              "type": "integer",
+              "default": 0,
+              "title": "The organization_type_id Schema",
+              "examples": [
+                1
+              ]
+            },
+            "organization_type": {
+              "type": "string",
+              "default": "",
+              "title": "The organization_type Schema",
+              "examples": [
+                "Computer/IT"
+              ]
+            },
+            "longitude": {
+              "type": "string",
+              "default": "",
+              "title": "The longitude Schema",
+              "examples": [
+                "107.5717954613689"
+              ]
+            },
+            "latitude": {
+              "type": "string",
+              "default": "",
+              "title": "The latitude Schema",
+              "examples": [
+                "-6.9370497799498665"
+              ]
+            },
+            "radius": {
+              "type": "integer",
+              "default": 0,
+              "title": "The radius Schema",
+              "examples": [
+                100000000
+              ]
+            },
+            "location": {
+              "type": "array",
+              "default": [],
+              "title": "The location Schema",
+              "items": {},
+              "examples": [
+                []
+              ]
+            },
+            "pic_name": {
+              "type": "string",
+              "default": "",
+              "title": "The pic_name Schema",
+              "examples": [
+                "Gery"
+              ]
+            },
+            "pic_number": {
+              "type": "string",
+              "default": "",
+              "title": "The pic_number Schema",
+              "examples": [
+                "6282116417100"
+              ]
+            },
+            "pic_email": {
+              "type": "string",
+              "default": "",
+              "title": "The pic_email Schema",
+              "examples": [
+                "hr@smooets.com"
+              ]
+            },
+            "is_child": {
+              "type": "boolean",
+              "default": false,
+              "title": "The is_child Schema",
+              "examples": [
+                false
+              ]
+            }
+          },
+          "examples": [{
+            "id": 2,
+            "name": "SMOOETS",
+            "logo": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/organizations/logos/mae1XO7FpqyHnLtVnFvk4xZw9lc9gY81z2cYGvz1fLBqaVj0Zo.jpg",
+            "address": "Jl. Holis Regency No.37A, Babakan, Babakan Ciparay, Bandung City, West Java 40222",
+            "description": "Description of Organization",
+            "country_code": "ind",
+            "organization_type_id": 1,
+            "organization_type": "Computer/IT",
+            "longitude": "107.5717954613689",
+            "latitude": "-6.9370497799498665",
+            "radius": 100000000,
+            "location": [],
+            "pic_name": "Gery",
+            "pic_number": "6282116417100",
+            "pic_email": "hr@smooets.com",
+            "is_child": false
+          }]
+        }
+      },
+      "examples": [{
+        "message": "Login berhasil",
+        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ",
+        "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ",
+        "profile": {
+          "user_id": 4,
+          "role_id": 2,
+          "role": "HR Admin",
+          "nik": "123213",
+          "full_name": "PAGII HR",
+          "email": "hr@smooets.com",
+          "address": "jl.holis",
+          "phone": "0812345678575",
+          "job_title_id": 2,
+          "job_title": "Developers",
+          "join_date": "2023-01-24",
+          "date_of_birth": "2022-11-11",
+          "avatar": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/users/images/WjLGJBZ5HdOfke4OLyri1p98P2poqXeQc46H2T0IkCKpaVp3YV.png",
+          "manager_id": "1233321",
+          "manager_name": null,
+          "language": "id",
+          "bank_name": null,
+          "bank_account_number": null,
+          "bank_account_name": null
+        },
+        "organization": {
+          "id": 2,
+          "name": "SMOOETS",
+          "logo": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/organizations/logos/mae1XO7FpqyHnLtVnFvk4xZw9lc9gY81z2cYGvz1fLBqaVj0Zo.jpg",
+          "address": "Jl. Holis Regency No.37A, Babakan, Babakan Ciparay, Bandung City, West Java 40222",
+          "description": "Description of Organization",
+          "country_code": "ind",
+          "organization_type_id": 1,
+          "organization_type": "Computer/IT",
+          "longitude": "107.5717954613689",
+          "latitude": "-6.9370497799498665",
+          "radius": 100000000,
+          "location": [],
+          "pic_name": "Gery",
+          "pic_number": "6282116417100",
+          "pic_email": "hr@smooets.com",
+          "is_child": false
+        }
+      }]
+    }
+  },
+  "examples": [{
+    "error": false,
+    "status": 200,
+    "message": "OK - The request was successful",
+    "data": {
+      "message": "Login berhasil",
+      "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ",
+      "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJockBzbW9vZXRzLmNvbSIsInBhc3N3b3JkIjoiNzE3NzY1NzI3NDc5NzU2OTZmNzA2MTczNjQ2NjY3Njg6MjNiY2M4ODBmMDhlOGFjODVmZGQ1ODNmZTk5NGE5MzQiLCJyb2xlX2lkIjoyLCJzdGF0dXMiOm51bGwsImRldmljZV9pZCI6bnVsbCwiZm9yZ290X3Bhc3N3b3JkIjoiMjAyMy0wNC0wMyAxNToyNDoyNyIsImxhbmd1YWdlIjoiaWQiLCJyZWdpc3RyYXRpb25fdG9rZW4iOiJlNVJWU25kaVFRVzltdlRJUTc4alhmOkFQQTkxYkZyckdpcVJlbGlERlVGRXNXQzVYVm1KbXVzejdIaVY0SDdqX0RjXzY0UUM1V1Bhc3JtVE5QLUJXM2dfdndUQ2RVWER2b29tQzVfWmQxZXc2Q1ZMT1Z5X2lrU1pvNjdVT3hKQU1ycWlNWUhjZ19idGctc05MdWVkZkZ0cmJ2REQtLUVaUU1YIiwib3JnYW5pemF0aW9uX2lkIjoyLCJpYXQiOjE2ODMwMzgxMjF9.JsqvpV-5z7C1eTbYKLjfhjt4yQB_KBTtHhuuO2EiEjQ",
+      "profile": {
+        "user_id": 4,
+        "role_id": 2,
+        "role": "HR Admin",
+        "nik": "123213",
+        "full_name": "PAGII HR",
+        "email": "hr@smooets.com",
+        "address": "jl.holis",
+        "phone": "0812345678575",
+        "job_title_id": 2,
+        "job_title": "Developers",
+        "join_date": "2023-01-24",
+        "date_of_birth": "2022-11-11",
+        "avatar": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/users/images/WjLGJBZ5HdOfke4OLyri1p98P2poqXeQc46H2T0IkCKpaVp3YV.png",
+        "manager_id": "1233321",
+        "manager_name": null,
+        "language": "id",
+        "bank_name": null,
+        "bank_account_number": null,
+        "bank_account_name": null
+      },
+      "organization": {
+        "id": 2,
+        "name": "SMOOETS",
+        "logo": "https://pagii.sgp1.digitaloceanspaces.com/staging/uploads/2/organizations/logos/mae1XO7FpqyHnLtVnFvk4xZw9lc9gY81z2cYGvz1fLBqaVj0Zo.jpg",
+        "address": "Jl. Holis Regency No.37A, Babakan, Babakan Ciparay, Bandung City, West Java 40222",
+        "description": "Description of Organization",
+        "country_code": "ind",
+        "organization_type_id": 1,
+        "organization_type": "Computer/IT",
+        "longitude": "107.5717954613689",
+        "latitude": "-6.9370497799498665",
+        "radius": 100000000,
+        "location": [],
+        "pic_name": "Gery",
+        "pic_number": "6282116417100",
+        "pic_email": "hr@smooets.com",
+        "is_child": false
+      }
+    }
+  }]
+}
