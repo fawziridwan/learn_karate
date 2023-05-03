@@ -11,7 +11,9 @@
 ### How to Run
 1. Open Your Intellij Idea
 2. Clone the projects
-3. Reload the pom.xml![img_2.png](img_2.png)
+3. Reload the pom.xml!
+[img_2.png](img_2.png)
 4. Open the feature files
 ![img.png](img.png)
-5. run the Feature files or Scenario Outline![img_1.png](img_1.png)
+5. run the Feature files or Scenario Outline
+![img_1.png](img_1.png)
